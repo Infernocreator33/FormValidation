@@ -1,0 +1,39 @@
+referring to a form console.log(document.forms.length) is a collection of forms so saying how many form elements are on the page.
+
+can pull the object name out by saying document.myForm as in document.className
+
+document.forms[0].elements.length is trying to figure out the length of the first form on  the document.
+
+document.myForm.firstName.value then pulls the value of firstName from that first form
+
+onreset specifies the javascript code to execute when the form is reset
+
+onsubmit specifies the javascript to execute when the form is submitted
+type="submit" works
+
+the form property for all elements stores the name of the form that the element is contained in 
+
+onclick= "checkText(this.form)" when inside a form****
+function checkText(frm)
+{
+  form here is form from form element is contained in
+}
+
+
+method="get" puts that into the url and is not secure but puts value in the url
+get----
+appends form0data into the url in name/value pairs
+the length of a url is limited to about 3000 characters
+never use get to send sensitive data! ( will be visible in the url)
+useful for form submissions where a user want to book mark the result g
+get is better for non-secure data, like query strings in google
+ 
+
+method="post" puts that data into the server if connected but is more secure so won't show up in the url
+post-----
+Appends form-data inside the body of the http request (data is not show is in url)
+Has no size limitations
+Form Submissions with POST cannot be bookmarked
+
+checked returns a booleanValue for is it checked yes or no
+
