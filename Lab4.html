@@ -6,15 +6,17 @@
     <script>
       function isSelected(form){
         //create a variable len that holds the number of select options
-        
+        var len = form.mySelect.length;
         //create a for loop  using len
-
+        for(i = 0; i < len; i++)
+      {
           //alert the value for each option
-
+          alert(form.mySelect[i].value);
           //alert the boolean selected for each option
+          alert(form.mySelect[i].selected);
 
-          //alert the text property
       }
+    }
     </script>
   </head>
   <body>
